@@ -1,0 +1,7 @@
+*.local.*
+.env
+.env.*
+private/
+work/
+__pycache__/
+*.pyc
