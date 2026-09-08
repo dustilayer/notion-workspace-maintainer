@@ -1,6 +1,6 @@
 ---
 name: notion-workspace-maintainer
-description: Maintain Notion dashboards, linked database views, task tables, and course calendars. Use for embedding editable data in pages, separating personal tasks from class schedules, repairing filters, and importing schedules without duplicates. Does not manage external calendars unless requested.
+description: Design and maintain Notion page layouts, dashboards, linked database views, task tables, and course calendars. Use for embedding editable data in pages, separating personal tasks from class schedules, repairing filters, and importing schedules without duplicates. Does not manage external calendars unless requested.
 ---
 
 # Notion workspace maintenance
@@ -19,6 +19,10 @@ Make the requested change in Notion and verify the saved result. A prose schedul
 Prefer available Notion connector tools for records, properties, page blocks, and supported view settings. Use browser controls for settings the connector cannot express faithfully. Inspect the current UI before interacting, then read back the saved setting.
 
 A Skill provides workflow instructions, not Notion access. If neither a connected tool nor an authenticated browser is available, explain the missing connection; do not claim an edit was made.
+
+## Page design and restructuring
+
+For page styling, dashboard layout, view selection, relations, or computed summaries, read [references/page-design.md](references/page-design.md). Combine that guidance with the preservation and verification rules below. A design request does not authorize unrelated data changes.
 
 ## Views and filters
 
