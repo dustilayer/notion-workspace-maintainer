@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion 工作区维护"
+  short_description: "调整 Notion 页面、共享表格与动态筛选，维护个人待办和课程日历"
+  default_prompt: "使用 $notion-workspace-maintainer 调整我的 Notion 页面和数据库视图，并检查保存后的显示结果。"
