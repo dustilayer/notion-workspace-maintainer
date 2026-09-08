@@ -41,6 +41,10 @@ For page styling, dashboard layout, view selection, relations, or computed summa
 - A selected weekday section must not automatically include another section's meetings. If a weekday preference contradicts explicitly supplied exception dates, resolve the specific ambiguity before changing those exceptions; continue unrelated work meanwhile.
 - Use start/end timestamps for calendar sessions and the existing course relation where available. Missing dates or deadlines stay unknown; do not invent them to fill a view.
 
+## Nested content and bulk edits
+
+For recursive reads, pagination, content conversion, or detailed source records, read [references/reliable-editing.md](references/reliable-editing.md). Keep research and paper-analysis workflows separate unless requested.
+
 ## Verify and report
 
 Read back the changed records or view configuration. Check a representative included record and excluded record where available; for an empty view, inspect the saved conditions and source data instead. For dashboard changes, check the rendered page as well as the source configuration when browser access is available.
