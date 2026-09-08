@@ -20,6 +20,14 @@ Keep properties focused on search, filtering, relations, and workflow state. Put
 
 After an uncertain write response, read back the target before retrying a create operation. Retry only the missing part. Distinguish permission failures from absent data, and do not create a replacement database to work around an inaccessible one.
 
+## Connector readback limitations
+
+Inspect both simpleFilters and advancedFilter when a connector exposes them separately. Preserve both layers and their grouping; a UI relative-date filter may live outside the advanced tree.
+
+If a relative-day view query returns no records but the UI shows records, compare the saved configuration, source records, workspace time zone, and rendered view. Do not infer data loss or rewrite records from the empty response alone. Report an unresolved discrepancy without guessing its cause.
+
+An opaque formulaResult reference is not a numeric result. If the connector cannot resolve it, verify representative formula values in the UI and disclose that numeric connector readback was unavailable.
+
 ## Sources considered
 
 These are independently written operating rules, not bundled upstream code or skill text:
