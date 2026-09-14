@@ -1,26 +1,23 @@
+[繁體中文](README.md) ｜ [简体中文](README.zh-CN.md) ｜ [English](README.en.md)
+
 # Notion Workspace Maintainer
 
-用于维护 Notion 页面、关联数据库视图、个人待办和课程日历的 Agent Skill。
+幫助助手維護 Notion 頁面、數據庫視圖和佈局的 Skill。這是操作說明，不是獨立運行的網站或程序。
 
-适用示例：
+## 第一次使用
 
-- 把任务表直接嵌入主页，并与原数据库同步编辑。
-- 让每日事项动态显示当天个人任务，课程保留在课程日历。
-- 保留原有筛选条件的同时增加新条件。
-- 根据确认的选课和课表导入日程，避免重复。
+從 [SKILL.md](SKILL.md) 開始。無需 npm 或構建；所需連接器由使用這個 Skill 的助手提供。
 
-## 使用
+下載倉庫，把 SKILL.md、agents 和 references 保持在同一技能目錄中，再由支持 Skill 的助手加載。連接 Notion 後，先給出一個具體頁面和小任務，檢查結果再擴大範圍。公開版本不含私人工作區映射。源碼文件是最新編輯入口；倉庫 ZIP 是歷史打包快照，使用前核對版本。
 
-将本目录放入 Codex 的技能目录，例如 `~/.codex/skills/notion-workspace-maintainer`，然后在新的会话中调用：
+## 讀代碼或修改時看哪裡
 
-```text
-使用 $notion-workspace-maintainer，把我的每日事项改成只显示当天个人任务。
-```
+| 文件 | 作用 |
+|---|---|
+| `SKILL.md` | 完整操作規則 |
+| `references/reliable-editing.md` | 可靠編輯和驗證步驟 |
+| `references/page-design.md` | 佈局與視圖選擇 |
 
-需要可用的 Notion 连接器，或已登录 Notion 的浏览器操作工具。某些视图选项需要通过浏览器设置；本 Skill 本身不提供账户访问权限。
+## 詳細參考
 
-## 隐私
-
-此发布包仅包含通用操作规则，没有真实页面链接、数据库 ID、个人待办、课程安排、账户凭据或本机路径。工作区信息应在使用时通过已授权连接读取。
-
-页面设计能力：布局、视图选择、关系汇总与公式边界检查。设计思路参考 https://github.com/Anusara14/notion-pages-skill ，说明为独立编写，详见 references/page-design.md。
+[原有說明](README.original.md) 保留歷史細節和來源署名，語言保持原樣。部分描述屬於舊版本；有差異時以當前源碼和本入口說明為準。
