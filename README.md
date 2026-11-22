@@ -1,23 +1,23 @@
-[繁體中文](README.md) ｜ [简体中文](README.zh-CN.md) ｜ [English](README.en.md)
+[English](README.md) · [中文简介](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
 # Notion Workspace Maintainer
 
-幫助助手維護 Notion 頁面、數據庫視圖和佈局的 Skill。這是操作說明，不是獨立運行的網站或程序。
+A Skill that guides an assistant in maintaining Notion pages, database views and layouts. It is an instruction package, not a standalone website or executable.
 
-## 第一次使用
+## Start here
 
-從 [SKILL.md](SKILL.md) 開始。無需 npm 或構建；所需連接器由使用這個 Skill 的助手提供。
+Start with [SKILL.md](SKILL.md). No npm or build step is required. The host assistant supplies the required connectors.
 
-下載倉庫，把 SKILL.md、agents 和 references 保持在同一技能目錄中，再由支持 Skill 的助手加載。連接 Notion 後，先給出一個具體頁面和小任務，檢查結果再擴大範圍。公開版本不含私人工作區映射。源碼文件是最新編輯入口；倉庫 ZIP 是歷史打包快照，使用前核對版本。
+Download the repository and keep SKILL.md, agents and references together in a skill directory supported by your assistant. Connect Notion, start with one specific page and a small task, then inspect the result. The public edition excludes private workspace mappings. Source files are the current editing entry point; the ZIP is a packaged snapshot whose version should be checked.
 
-## 讀代碼或修改時看哪裡
+## Where to read or change code
 
-| 文件 | 作用 |
+| File | Purpose |
 |---|---|
-| `SKILL.md` | 完整操作規則 |
-| `references/reliable-editing.md` | 可靠編輯和驗證步驟 |
-| `references/page-design.md` | 佈局與視圖選擇 |
+| `SKILL.md` | Complete operating instructions |
+| `references/reliable-editing.md` | Reliable editing and verification |
+| `references/page-design.md` | Layout and view selection |
 
-## 詳細參考
+## Detailed reference
 
-[原有說明](README.original.md) 保留歷史細節和來源署名，語言保持原樣。部分描述屬於舊版本；有差異時以當前源碼和本入口說明為準。
+[Original guide](README.original.md) preserves earlier details and attribution in its original language. Some statements describe an older version; use current source code and this entry guide to resolve differences.
